@@ -2,7 +2,7 @@
 /**
  * main - it prints the size of various types on the computer it is compiled on
  *
- * Return: 0 if it runs successfully 
+ * Return: 0 if it runs successfully
  *
  */
 
@@ -21,3 +21,4 @@ int main(void)
 	printf("Size of a float: %d byte(s)\n", (int)sizeof(f));
 	return (0);
 }
+

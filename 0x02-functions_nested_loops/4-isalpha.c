@@ -16,7 +16,7 @@ int _isalpha(int c)
 		if (c == i)
 			return (1);
 	}
-	for (i = 'A'; i<= 'Z'; i++)
+	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
 			return (1);

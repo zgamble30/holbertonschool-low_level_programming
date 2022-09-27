@@ -5,31 +5,28 @@
 *
 */
 
+
 void print_triangle(int size)
 {
-	int c, i, j;
+	int hash, index;
 
-	c = 0;
-	i = size - 1;
-	while (c < size)
+	if (size > 0)
 	{
-		i = size - 1 - c;
-		j = c + 1;
-		while (i > 0)
+		for (hash = 1; hash <= size; hash++)
 		{
-			_putchar(' ');
-			i--;
+			for (index = size - hash; index > 0; index--)
+				_putchar(' ');
+
+			for (index = 0; index < hash; index++)
+				_putchar('#');
+
+			if (hash == size)
+				continue;
+
+			_putchar('\n');
 		}
-		while (j > 0)
-		{
-			_putchar('#');
-			j--;
-		}
-		_putchar('\n');
-		c++;
 	}
 
-	if (size <= 0)
-		_putchar('\n');
+	_putchar('\n');
 }
 
